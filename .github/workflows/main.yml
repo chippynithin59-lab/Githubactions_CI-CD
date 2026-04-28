@@ -4,15 +4,12 @@ on:
   push: 
    branches: main
   workflow_dispatch: 
-
 jobs:
   build:
    runs-on: ubuntu-latest
-
-    steps:
+   steps:
      - name: checkout code
      uses: actions/checkout@V1
-
      - name: print present working directory
       run: pwd
      - name: print list of directories
